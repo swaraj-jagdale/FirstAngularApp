@@ -16,41 +16,48 @@ export class RoomsComponent {
     bookedRooms: 5,
   };
 
-  roomList: RoomList[] = [
-    {
-      roomNumber: 1,
-      roomType: 'Deluxe',
-      ammenities: 'Wifi, AC, TV',
-      price: 500,
-      photos:
-        'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-      checkinTime: new Date('11/11/2021'),
-      checkoutTime: new Date('11/12/2021'),
-    },
-
-    {
-      roomNumber: 2,
-      roomType: 'Deluxe',
-      ammenities: 'Wifi, AC, TV',
-      price: 1500,
-      photos:
-        'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-      checkinTime: new Date('11/11/2021'),
-      checkoutTime: new Date('11/12/2021'),
-    },
-    {
-      roomNumber: 3,
-      roomType: 'Private Suite',
-      ammenities: 'Wifi, AC, TV',
-      price: 10000,
-      photos:
-        'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-      checkinTime: new Date('11/11/2021'),
-      checkoutTime: new Date('11/12/2021'),
-    },
-  ];
+  roomList: RoomList[] = [];
 
   toggle() {
     this.hideRooms = !this.hideRooms;
+  }
+
+  ngOnInit(): void {
+    this.roomList = [
+      {
+        roomNumber: 1,
+        roomType: 'Deluxe',
+        ammenities: 'Wifi, AC, TV',
+        price: 500,
+        photos:
+          'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
+        checkinTime: new Date('11/11/2021'),
+        checkoutTime: new Date('11/12/2021'),
+        rating: 4.5,
+      },
+
+      {
+        roomNumber: 2,
+        roomType: 'Deluxe',
+        ammenities: 'Wifi, AC, TV',
+        price: 1500,
+        photos:
+          'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
+        checkinTime: new Date('11/11/2021'),
+        checkoutTime: new Date('11/12/2021'),
+        rating: 3.7,
+      },
+      {
+        roomNumber: 3,
+        roomType: 'Private Suite',
+        ammenities: 'Wifi, AC, TV',
+        price: 10000,
+        photos:
+          'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
+        checkinTime: new Date('11/11/2021'),
+        checkoutTime: new Date('11/12/2021'),
+        rating: 2.7,
+      },
+    ];
   }
 }

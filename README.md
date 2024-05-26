@@ -1,4 +1,4 @@
-# Hotel Inventory App (took a long time)
+# Hotel Inventory App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
 
