@@ -1,0 +1,7 @@
+<h1>Hola Amigo</h1>
+
+<div [ngSwitch]="role">
+  <div *ngSwitchCase="'admin'"><hinv-rooms></hinv-rooms></div>
+  <div *ngSwitchCase="'user'">Welcome user</div>
+  <div *ngSwitchDefault>You are not authorized to view this content</div>
+</div>
